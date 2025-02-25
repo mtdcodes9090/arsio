@@ -32,10 +32,11 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+    color: #00ff00;
 }
 
 main {
@@ -71,6 +72,12 @@ footer {
     margin-right: 0.5em;
     border: none;
     cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.tablink:hover {
+    background-color: #006600;
+    transform: scale(1.05);
 }
 
 .tabcontent {
@@ -83,3 +90,4 @@ footer {
 .tabcontent h3 {
     margin-top: 0;
 }
+
